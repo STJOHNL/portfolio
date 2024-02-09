@@ -25,12 +25,13 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            <section className="client-slider">
-                <h3>I'm grateful to have worked with such clients</h3>
-                <LogoCarousel />
-            </section>
+            <div className="white-container">
+                <section className="client-slider">
+                    <h3>I'm grateful to have worked with such clients</h3>
+                    <LogoCarousel />
+                </section>
+            </div>
             <section className="portfolio-section">
-                <hr />
                 <div className="title-blurb">
                     <h3>My work</h3>
                     <p>Explore a selection of client and personal projects I've developed.</p>
