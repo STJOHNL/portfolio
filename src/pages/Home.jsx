@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom"
 import LogoCarousel from "../components/LogoCarousel"
 import loganLego from '../assets/images/loganLego.gif'
+import ProjectCard from "../components/ProjectCard"
+import projectOne from '../assets/images/projects/GroupRunApp.png'
+import projectTwo from '../assets/images/projects/MyUncommonPlan.png'
+import projectThree from '../assets/images/projects/FitFlow.png'
 
 const Home = () => {
     return (
@@ -37,21 +41,21 @@ const Home = () => {
                     <p>Explore a selection of client and personal projects I've developed.</p>
                 </div>
                 <section className="portfolio-cards">
-                    <div className="portfolio-card glass">
-                        <h5>Project Name</h5>
-                        <img src="https://placekitten.com/300/300" alt="" />
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero veniam exercitationem doloribus minus quasi aut!</p>
-                    </div>
-                    <div className="portfolio-card glass">
-                        <h5>Project Name</h5>
-                        <img src="https://placekitten.com/300/300" alt="" />
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero veniam exercitationem doloribus minus quasi aut!</p>
-                    </div>
-                    <div className="portfolio-card glass">
-                        <h5>Project Name</h5>
-                        <img src="https://placekitten.com/300/300" alt="" />
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero veniam exercitationem doloribus minus quasi aut!</p>
-                    </div>
+                    <ProjectCard
+                        title={'Group Run Application'}
+                        image={projectOne}
+                        description={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero veniam exercitationem doloribus minus quasi aut'}
+                    />
+                    <ProjectCard
+                        title={'MyUncommonPlan'}
+                        image={projectTwo}
+                        description={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero veniam exercitationem doloribus minus quasi aut'}
+                    />
+                    <ProjectCard
+                        title={'FitFlow'}
+                        image={projectThree}
+                        description={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero veniam exercitationem doloribus minus quasi aut'}
+                    />
                 </section>
                 <Link
                     to='/portfolio'

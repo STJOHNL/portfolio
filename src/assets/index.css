@@ -196,13 +196,18 @@ background: #33D0F5;
 /* ================================================ */
 /* ================================================ */
 
-.glass {
+.glass,
+.dark-glass {
     /* From https://css.glass */
     background: rgba(255, 255, 255, 0.188);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid var(--white);
+}
+
+.dark-glass {
+    background: var(--background);
 }
 
 /* ================================================ */
@@ -355,10 +360,10 @@ footer h3 {
 
 .portfolio-section {
     background: var(--white);
-    background-image: url('./images/backgroundLogo.png');
+    /* background-image: url('./images/backgroundLogo.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: contain; */
     border-radius: 0 0 30px 30px;
     padding-top: 6%;
 }
