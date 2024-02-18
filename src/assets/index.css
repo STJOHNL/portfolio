@@ -443,3 +443,24 @@ footer h3 {
 .carousel-logo {
     max-width: 100px;
 }
+
+/* ================================================ */
+/* ================================================ */
+/* About */
+/* ================================================ */
+/* ================================================ */
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+.skills-container p {
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: 55px;
+    padding: 3px 10px;
+    font-size: 14px;
+}
